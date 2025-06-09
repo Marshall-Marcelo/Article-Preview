@@ -1,0 +1,142 @@
+:root {
+  --font-size: 13px;
+  --medium: 500;
+  --heavy: 700;
+  --vdgb: hsl(217, 19%, 35%);
+  --ddb: hsl(214, 17%, 51%);
+  --gb: hsl(212, 23%, 69%);
+  --lgb: hsl(210, 46%, 95%);
+  --blue: hsl(228, 45%, 44%);
+}
+
+html {
+  font-family: Manrope;
+  font-size: var(--font-size);
+}
+
+body {
+  display: grid;
+  margin: 0;
+  place-items: center;
+  height: 100vh;
+  background-color: var(--lgb);
+}
+
+.container {
+  margin: 10vw 1vw;
+  display: flex;
+  flex-direction: column;
+  width: 80vw;
+  background-color: white;
+  border-radius: 15px;
+}
+
+.container .desc-img {
+  object-fit: cover;
+  width: 100%;
+  max-height: 20vh;
+  padding: 0;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.desc {
+  margin: 3% 7.5%;
+}
+
+.desc h1 {
+  font-size: 1em;
+  color: var(--vdgb);
+  font-weight: var(--heavy);
+}
+
+.desc p,
+.post p {
+  color: var(--ddb);
+  font-weight: var(--medium);
+  font-size: 0.8em;
+}
+
+.author .initial,
+.author .after {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 5% 7.5%;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.author .icons {
+  display: flex;
+  flex-direction: row;
+  padding-left: 5%;
+}
+
+.author .icons img {
+  padding-left: 2vw;
+}
+
+.author .initial img {
+  width: 9vw;
+  height: 9vw;
+  border-radius: 50%;
+}
+
+.author .initial .share {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 8vw;
+  height: 8vw;
+  margin-left: auto;
+  background-color: var(--lgb);
+  border-radius: 50%;
+}
+
+.author .after .share {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 8vw;
+  height: 8vw;
+  margin-left: auto;
+  background-color: var(--ddb);
+  border-radius: 50%;
+}
+
+.author .after .share img {
+  filter: brightness(0) invert(1);
+}
+
+.author .initial .share img,
+.author .after .share img {
+  width: 40%;
+  height: 40%;
+}
+
+.author .after {
+  background-color: var(--vdgb);
+}
+
+span {
+  color: var(--gb);
+  letter-spacing: 0.3rem;
+}
+
+.post {
+  display: flex;
+  flex-direction: column;
+  padding-left: 1em;
+}
+
+.post p {
+  margin: 0;
+}
+
+.attribution {
+  text-align: center;
+}
+.attribution a {
+  color: var(--blue);
+}
