@@ -41,6 +41,8 @@ body {
 }
 
 .desc {
+  display: flex;
+  flex-direction: column;
   margin: 3% 7.5%;
 }
 
@@ -130,6 +132,11 @@ span {
   padding-left: 1em;
 }
 
+#poster {
+  color: var(--vdgb);
+  font-weight: var(--heavy);
+}
+
 .post p {
   margin: 0;
 }
@@ -139,4 +146,49 @@ span {
 }
 .attribution a {
   color: var(--blue);
+}
+
+@media (min-width: 550px) {
+  .container {
+    width: 50vw;
+    height: auto;
+    flex-direction: row;
+  }
+
+  .container .desc-img {
+    max-height: 100%;
+    width: 15vw;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 15px;
+  }
+
+  .author .initial,
+  .author .after {
+    padding: 1% 7.5% 3% 7.5%;
+    border-bottom-left-radius: 0px;
+  }
+
+  .author .initial img {
+    width: 3vw;
+    height: 3vw;
+  }
+
+  .author .initial .share {
+    width: 3vw;
+    height: 3vw;
+  }
+
+  .author .after .share {
+    width: 3vw;
+    height: 3vw;
+  }
+
+  .desc h1 {
+    font-size: 1.5em;
+  }
+
+  .desc p,
+  .post p {
+    font-size: 1em;
+  }
 }
