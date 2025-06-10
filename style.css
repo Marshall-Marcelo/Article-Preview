@@ -150,14 +150,14 @@ span {
 
 @media (min-width: 550px) {
   .container {
-    width: 50vw;
-    height: auto;
+    width: 40vw;
     flex-direction: row;
   }
 
   .container .desc-img {
     max-height: 100%;
-    width: 15vw;
+    min-width: 15vw;
+    max-width: 15vw;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 15px;
   }
